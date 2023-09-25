@@ -1,0 +1,24 @@
+
+
+Links de referencia:
+1. https://dev.to/moe23/asp-net-core-5-rest-api-step-by-step-2mb6
+2. https://dev.to/moe23/asp-net-core-5-rest-api-authentication-with-jwt-step-by-step-140d
+3. https://dev.to/moe23/refresh-jwt-with-refresh-tokens-in-asp-net-core-5-rest-api-step-by-step-3en5
+
+Comandos
+dotnet --version
+dotnet tool install --global dotnet-ef
+dotnet new webapi -n "TodoApp" -lang "C#" -au none
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet build
+dotnet run
+
+Atualizar banco:
+dotnet ef migrations add "Initial Migrations"
+dotnet ef database update
+
+Pacotes para uso de Autenticação:
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer 
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore 
+dotnet add package Microsoft.AspNetCore.Identity.UI
