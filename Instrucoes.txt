@@ -23,4 +23,5 @@ dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
 dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore 
 dotnet add package Microsoft.AspNetCore.Identity.UI
 
-Git adicionado
+Git adicionado ao projeto:
+git remote add origin https://github.com/carpenedo/ToDo.git
